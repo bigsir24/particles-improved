@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "bigsir.particlesmod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "WorldMixin"
+  ],
+  "client": [
+    "FrustumMixin",
+    "LightmapHelperAccessor",
+    "MinecraftMixin",
+    "ShaderAccessor",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

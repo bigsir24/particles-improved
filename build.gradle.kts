@@ -7,7 +7,7 @@ plugins {
     id("java")
 }
 
-val lwjglVersion = "3.3.4"
+val lwjglVersion = "3.3.3"
 
 val lwjglNatives = when {
     Os.isFamily(Os.FAMILY_UNIX) && !Os.isFamily(Os.FAMILY_MAC) -> "natives-linux"

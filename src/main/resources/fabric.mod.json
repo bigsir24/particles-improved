@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "particlesmod",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Particles Improved",
+  "description": "",
   "authors": [
-    "Turnip Labs"
+    "Big Sir"
   ],
   "contact": {
     "homepage": "",
@@ -16,26 +16,28 @@
 	"icon": "icon.png",
   "license": "CC0-1.0",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"bigsir.particlesmod.ParticlesMod"
     ],
-		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+		"beforeClientStart": [
+			"bigsir.particlesmod.ParticlesMod"
 		],
-		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+		"afterClientStart": [
+			"bigsir.particlesmod.ParticlesMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"bigsir.particlesmod.ParticlesMod"
+		],
+		"initOptions": [
+			"bigsir.particlesmod.ParticlesMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "mixins.json"
   ],
-
-  "depends": {
+	"depends": {
 		"minecraft": "*",
     "fabricloader": ">=0.15.5"
   },
